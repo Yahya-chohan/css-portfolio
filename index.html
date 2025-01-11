@@ -1,206 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-<style>
-#nvbargbcolor{
-background-color: rgb(116, 116, 116);
-}
-.cardimg{
-  margin-left: 150px;
-}
-.btnIcon{
-  margin-left: 150px;
-}
 
-.casesdtImg{
-margin-left: 30px;
-margin-top: 40px;
-}
-</style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <style>
+    #nvbargbcolor {
+      background-color: rgb(116, 116, 116);
+    }
+
+    .cardimg {
+      margin-left: 150px;
+    }
+
+    .btnIcon {
+      margin-left: 150px;
+    }
+
+    .casesdtImg {
+      margin-left: 30px;
+      margin-top: 40px;
+    }
+
+    /* w3background video  */
+    #myVideo {
+      position: absolute;
+      top: 20px;
+      object-fit: cover;
+    }
+
+    .mynavbar {
+      z-index: 15;
+
+    }
+
+    .firstsection {
+      position: relative;
+      height: 100vh;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .heroSection {
+      z-index: 6;
+      position: relative;
+      height: 100%;
+      width: 100%;
+      padding: 90px;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      gap: 50px;
+
+    }
+
+    .video-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.486), rgba(0, 0, 0, 0.486));
+      z-index: 2;
+    }
+
+    .leadingtext {
+      background-image: url(https://mystic-advertising.com/wp-content/uploads/2024/05/animation.gif);
+      background-size: cover;
+      color: transparent;
+      background-clip: text;
+      -moz-background-clip: text;
+      -webkit-background-clip: text;
+      font-weight: 700;
+      font-size: 60px;
+    }
+  </style>
 
 
 </head>
+
 <body>
-    <!-- nav bar -->
-    <nav class=" navbar-expand-lg bg-body-tertiary " >
-        <div class="container-fluid"  id="nvbargbcolor">
-          <div style="display: flex;">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li style="padding-left: 40px;" >
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <!-- class="nav-item" -->
-              <li style="padding-left: 40px;" >
-                <a class="nav-link" href="#">     Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <!-- <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a> -->
-                <!-- <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul> -->
-              </li>
-              <!-- class="nav-item" -->
-              <li style="padding-left: 40px; padding-top: 10px;">
-                <!-- class="nav-link disabled" -->
-                <a  aria-disabled="true">  Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
+  <!-- nav bar -->
+  <section class="firstsection ">
+    <nav class="navbar mynavbar fixed-top  navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
         </div>
-        </div>
-      </nav>
-      <!-- nav bar end  -->
-      
-      <div style="background-image: url(./img/bgqw.jpg); width: 100%; height: 500px; background-repeat: no-repeat; background-size: cover;">
-        <h1 style="color: #6ca93c; padding-top: 230px; padding-left: 410px; padding-right: 290px;">Building businesses into <br> brands  
-            with great strategy <br> and creativity</h1>
-        <h6 style="color: #6ca93c; padding-top: 40px; padding-left: 410px;">We illuminate businesses digitally and revolutionize them to <br> improve their presence</h6>
-    </div>
-    <div style="margin: auto; text-align: center; background-color: #bad6ff;" >
-        <h5>Elements Of Our Workflow</h5>
-        <h1>LEADING DIGITALLY</h1>
-<p style="padding-left: 400px; padding-right: 400px;">
-    Ingenious strategy is at the root of brand growth.
- 
-    Depending on a deep grasp of your aspirations, we seek a way to mystify your audiences and set yourself apart from the competition through agile immersive digital experiences that boost engagement.
-    
-  </p>
-    </div>
-    <div style="display: flex;">
- <div style="width: 50%;" >
-    <img style="margin-left: 20px;" src="./img/123.png" alt="" height="350px">
+      </div>
+    </nav>
+    <!-- nav bar end  -->
 
- </div>
- <div style="width: 50%; padding-top: 80px; padding-right: 70px; " >
-<h4>Our Mystical Story</h4>
-idea of exploring and discovering the world through the eyes of marketing and advertisement, gathering a team of creative individuals to accomplish his aim. Fast forward to today, Mystic Advertising is driven by creativity and serves as a leading advertising agency in the UAE, assisting 700+ clients with 360 marketing solutions, transf30pxorming businesses digitally, and diversifying their reach
- </div>
-</div>
-<!-- 3rd div  start -->
- <div style="margin: auto; text-align: center; ">
-  <div style="background-color: #dceaff;">
-  <h6 style="padding-top: 30px;">The Digital Partner for #YourNextBigMove</h6>
-  <h1 style="background-color: #03265d;  text-align: center; color: antiquewhite;">Empowering Your Journey</h1>
-</div>
-  <div style="padding-bottom: 50px;" >
-     <iframe width="1000" height="600" src="https://www.youtube.com/embed/GGf1JjSAKP4?si=Ijx0HNFE0VKEu2Xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  </div>
- </div>
-<!-- service card start -->
- <div style="background-color: #03265d; padding-bottom: 80px;">
-<div style="text-align: center; color: antiquewhite; padding-top: 50px;">
-  <h5>OUR ARRAY OF CREATIVE</h5>
-  <h2>SOLUTIONS</h2>
-</div>
-<div style="display: flex; margin-top: 50px; padding-top: 50px; ">
-<div style="width: 30%;border: 2px solid #11305f; margin-left: 30px; padding-top: 20px;">
-  <img class="cardimg" src="./img/loptopicon.png" alt="" width="100px">
-  <h3 style="text-align: center; color: antiquewhite; " >Digital Marketing Services</h3>
-  <p style="text-align: center; color: antiquewhite; padding-left: 10px; padding-right: 10px; padding-top: 10px;"   >Digital Marketing is our strong suit, and it is where we feel at <home class="br"></home> We strive to create content that surpasses expectations across all digital platforms.</p>
-  <button class="btnIcon"> Read more</button>
-</div>
+    <div class="heroSection ">
+      <h1 style="color: #c7e07d; font-size: 80px;">Businesses into brands
+        with great strategy and creativity</h1>
+      <p style="color: #ffffff;text-align: left;">We illuminate businesses digitally and revolutionize them to improve
+        their presence</p>
+    </div>
 
-<div style="width: 30%;border: 2px solid #11305f; margin-left: 30px; padding-top: 20px;">
-  <img class="cardimg" src="./img/loptopicon.png" alt="" width="100px">
-  <h3 style="text-align: center; color: antiquewhite; " >Digital Marketing Services</h3>
-  <p style="text-align: center; color: antiquewhite; padding-left: 10px; padding-right: 10px; padding-top: 10px;"   >Digital Marketing is our strong suit, and it is where we feel at <home class="br"></home> We strive to create content that surpasses expectations across all digital platforms.</p>
-  <button class="btnIcon"> Read more</button>
-</div>
-<div style="width: 30%;border: 2px solid #11305f; margin-left: 30px; padding-top: 20px;">
-  <img class="cardimg" src="./img/loptopicon.png" alt="" width="100px">
-  <h3 style="text-align: center; color: antiquewhite; " >Digital Marketing Services</h3>
-  <p style="text-align: center; color: antiquewhite; padding-left: 10px; padding-right: 10px; padding-top: 10px;"   >Digital Marketing is our strong suit, and it is where we feel at <home class="br"></home> We strive to create content that surpasses expectations across all digital platforms.</p>
-  <button class="btnIcon"> Read more</button>
-</div>
+    <div class="video-overlay"></div>
 
-</div>
+    <video autoplay muted loop id="myVideo">
+      <source src="https://mystic-advertising.com/wp-content/uploads/2023/09/Home-Mp4-1-2-1-1.mp4" type="video/mp4">
+    </video>
 
-<!-- 2nd <div -->
-  <div style="display: flex; margin-top: 30px; ">
-    <div style="width: 30%;border: 2px solid #11305f; margin-left: 30px; padding-top: 20px;">
-      <img class="cardimg" src="./img/loptopicon.png" alt="" width="100px">
-      <h3 style="text-align: center; color: antiquewhite; " >Digital Marketing Services</h3>
-      <p style="text-align: center; color: antiquewhite; padding-left: 10px; padding-right: 10px; padding-top: 10px;"   >Digital Marketing is our strong suit, and it is where we feel at <home class="br"></home> We strive to create content that surpasses expectations across all digital platforms.</p>
-      <button class="btnIcon"> Read more</button>
-    </div>
-    
-    <div style="width: 30%;border: 2px solid #11305f; margin-left: 30px; padding-top: 20px;">
-      <img class="cardimg" src="./img/loptopicon.png" alt="" width="100px">
-      <h3 style="text-align: center; color: antiquewhite; " >Digital Marketing Services</h3>
-      <p style="text-align: center; color: antiquewhite; padding-left: 10px; padding-right: 10px; padding-top: 10px;"   >Digital Marketing is our strong suit, and it is where we feel at <home class="br"></home> We strive to create content that surpasses expectations across all digital platforms.</p>
-      <button class="btnIcon"> Read more</button>
-    </div>
-    <div style="width: 30%;border: 2px solid #11305f; margin-left: 30px; padding-top: 20px;">
-      <img class="cardimg" src="./img/loptopicon.png" alt="" width="100px">
-      <h3 style="text-align: center; color: antiquewhite; " >Digital Marketing Services</h3>
-      <p style="text-align: center; color: antiquewhite; padding-left: 10px; padding-right: 10px; padding-top: 10px;"   >Digital Marketing is our strong suit, and it is where we feel at <home class="br"></home> We strive to create content that surpasses expectations across all digital platforms.</p>
-      <button class="btnIcon"> Read more</button>
-    </div>
-    
-    </div>
- </div>
-<!-- case stude -->
- <div style="padding-top: 20px; padding-bottom: 30px;" >
-  <h4 style="text-align: center;">TAKE A LOOK AT OUR</h4>
-  <h1 style="text-align: center;">CASE STUDIES</h1>
-  <div>
-    <img class="casesdtImg" src="./img/case std1.png" alt="" width="30%">
-    <img class="casesdtImg" src="./img/case std2.png" alt="" width="30%" >
-    <img class="casesdtImg" src="./img/casestd3.png" alt="" width="30%">
-  </div>
- </div>
- <div style="background-color: #03265d; text-align: center; padding-top: 30px; padding-bottom: 30px;" >
-  <h4 style="color: #6ca93c;">Want to Discus Your idea ?  </h4>
-  <button>GEt In Touch</button>
- </div>
- <div style="display: flex; padding-top: 40px;">
-  <div style="width: 50%; padding-left: 20px; ">
-  <h3>Our Collaborative Culture
-  </h3>
-  <p>As a team, we think that a mentality that values evolution – and the ability of <br> human potential to affect it – is the best environment for development. We try to alter the digital world by bringing together a fitting combination of ideas and passion, offering a space for innovation.</p>
-</div>
-  <div>
-    <h3>Envisioning Greatness Through</h3>
-    <div style="display: flex;">
-      <h5 style="background-color: #215dbe ; width: 150px; height: 80px; text-align: center; padding-top: 30px; margin-right: 15px;">Diversity</h5>
-  <h5 style="margin-right: 15px; background-color:#91eb4c ; width: 150px; height: 80px; text-align: center; padding-top: 30px;">Transparancy</h5>
-      <h5 style="background-color: #215dbe ; width: 150px; height: 80px; text-align: center; padding-top: 30px;">Creativity</h5>
-      
-    </div>
-  </div>
- </div>
-<div style="background-color: #03265d;">
-  <h4 style="text-align: center;">Our Team</h4>
-  <center>
-  <div style="width: 25%;border: 2px solid #11305f; margin-left: 30px;height: 500PX; ">
-    <img  src="./img/dk.jpg" alt="" width="100%" height="300px">
-    <h3 style="text-align: center; color: #f3f5f8;padding-top: 10px; " >Mystic Ka Daku</h3>
-    <p style="text-align: center; color: #f3f5f8; padding-left: 10px; padding-right: 10px; padding-top: 10px;"   > (mufta pro max) <br>kisi ka ka lunch muj sy bach k dhakia <br>
-      لڑکیوں کو کہتا ہوں "کافی پلا دو" <br> لڑکوں کو کہتا ہوں "آپ کھلا دو"۔
+  </section>
+
+
+  <div
+    style="display: flex; flex-direction: column;align-items: center; text-align: center; background-color: #e6f0ff; padding-top: 90px; padding-bottom: 90px;">
+    <h5 style="color: #79b24d; ">Elements Of Our Workflow</h5>
+    <h1 class="leadingtext">LEADING DIGITALLY</h1>
+    <p style="max-width: 690px; margin-top: 20px;">
+      Ingenious strategy is at the root of brand growth.
+      Depending on a deep grasp of your aspirations, we seek a way to mystify your audiences and set yourself apart from
+      the competition through agile immersive digital experiences that boost engagement.
     </p>
-    
   </div>
-</center>
-  <div style="display: flex; margin-top: 30px;">
-    <!-- <div style="width: 25%;border: 2px solid #11305f; margin-left: 30px;height: 500PX;">
+
+
+  <div style="display: flex; justify-content: space-between;   ">
+    <div style="width: 50%;">
+      <img style="width: 100%;height: 100%; " src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZHViYWl8ZW58MHx8MHx8fDA%3Dz" alt="" height="350px">
+
+    </div>
+    <div style= "padding-top: 80px;padding:  80px; width: 50%;  ">
+      <h4 style="font-weight: 700;">Our Mystical Story</h4>
+      <p style="color: darkgray;">Idea of exploring and discovering the world through the eyes of marketing and advertisement, gathering a team of
+        creative individuals to accomplish his aim. Fast forward to today, Mystic Advertising is driven by creativity and
+        serves as a leading advertising agency in the UAE, assisting 700+ clients with 360 marketing solutions,
+        transf30pxorming businesses digitally, and diversifying their reach</p>
+    </div>
+  </div>
+  <!-- 3rd div  start -->
+  <div style=" text-align: center; background-color: #dceaff; ">
+    <div style="padding-bottom: 50px;">
+      <h6 style="padding-top: 30px;">The Digital Partner for #YourNextBigMove</h6>
+      <h1 class="leadingtext">Empowering Your Journey</h1>
+    </div>
+    <div style="padding-bottom: 50px;">
+      <iframe width="1000" height="600" src="https://www.youtube.com/embed/GGf1JjSAKP4?si=Ijx0HNFE0VKEu2Xb"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- service card start -->
+  <div style="background-color: #03265d; padding-bottom: 80px;">
+    <div style="text-align: center; color: antiquewhite; padding-top: 50px;">
+      <h5 style="color: darkgray;">OUR ARRAY OF CREATIVE</h5>
+      <h2 style="font-size: 60px;  font-weight: 650;">SOLUTIONS</h2>
+    </div>
+    <div style="display: flex; margin-top: 50px; padding-top: 50px; ">
+      <div style="width: 30%;border: 2px solid #11305f; margin-left: 30px; padding-top: 20px;">
+        <img class="cardimg" src="./img/loptopicon.png" alt="" width="100px">
+        <h3 style="text-align: center; color: antiquewhite; ">Digital Marketing Services</h3>
+        <p style="text-align: center; color: antiquewhite; padding-left: 10px; padding-right: 10px; padding-top: 10px;">
+          Digital Marketing is our strong suit, and it is where we feel at <home class="br"></home> We strive to create
+          content that surpasses expectations across all digital platforms.</p>
+        <button class="btnIcon"> Read more</button>
+      </div>
+
+      <div style="width: 30%;border: 2px solid #11305f; margin-left: 30px; padding-top: 20px;">
+        <img class="cardimg" src="./img/loptopicon.png" alt="" width="100px">
+        <h3 style="text-align: center; color: antiquewhite; ">Digital Marketing Services</h3>
+        <p style="text-align: center; color: antiquewhite; padding-left: 10px; padding-right: 10px; padding-top: 10px;">
+          Digital Marketing is our strong suit, and it is where we feel at <home class="br"></home> We strive to create
+          content that surpasses expectations across all digital platforms.</p>
+        <button class="btnIcon"> Read more</button>
+      </div>
+      <div style="width: 30%;border: 2px solid #11305f; margin-left: 30px; padding-top: 20px;">
+        <img class="cardimg" src="./img/loptopicon.png" alt="" width="100px">
+        <h3 style="text-align: center; color: antiquewhite; ">Digital Marketing Services</h3>
+        <p style="text-align: center; color: antiquewhite; padding-left: 10px; padding-right: 10px; padding-top: 10px;">
+          Digital Marketing is our strong suit, and it is where we feel at <home class="br"></home> We strive to create
+          content that surpasses expectations across all digital platforms.</p>
+        <button class="btnIcon"> Read more</button>
+      </div>
+
+    </div>
+
+    <!-- 2nd <div -->
+    <div style="display: flex; margin-top: 30px; ">
+      <div style="width: 30%;border: 2px solid #11305f; margin-left: 30px; padding-top: 20px;">
+        <img class="cardimg" src="./img/loptopicon.png" alt="" width="100px">
+        <h3 style="text-align: center; color: antiquewhite; ">Digital Marketing Services</h3>
+        <p style="text-align: center; color: antiquewhite; padding-left: 10px; padding-right: 10px; padding-top: 10px;">
+          Digital Marketing is our strong suit, and it is where we feel at <home class="br"></home> We strive to create
+          content that surpasses expectations across all digital platforms.</p>
+        <button class="btnIcon"> Read more</button>
+      </div>
+
+      <div style="width: 30%;border: 2px solid #11305f; margin-left: 30px; padding-top: 20px;">
+        <img class="cardimg" src="./img/loptopicon.png" alt="" width="100px">
+        <h3 style="text-align: center; color: antiquewhite; ">Digital Marketing Services</h3>
+        <p style="text-align: center; color: antiquewhite; padding-left: 10px; padding-right: 10px; padding-top: 10px;">
+          Digital Marketing is our strong suit, and it is where we feel at <home class="br"></home> We strive to create
+          content that surpasses expectations across all digital platforms.</p>
+        <button class="btnIcon"> Read more</button>
+      </div>
+      <div style="width: 30%;border: 2px solid #11305f; margin-left: 30px; padding-top: 20px;">
+        <img class="cardimg" src="./img/loptopicon.png" alt="" width="100px">
+        <h3 style="text-align: center; color: antiquewhite; ">Digital Marketing Services</h3>
+        <p style="text-align: center; color: antiquewhite; padding-left: 10px; padding-right: 10px; padding-top: 10px;">
+          Digital Marketing is our strong suit, and it is where we feel at <home class="br"></home> We strive to create
+          content that surpasses expectations across all digital platforms.</p>
+        <button class="btnIcon"> Read more</button>
+      </div>
+
+    </div>
+  </div>
+  <!-- case stude -->
+  <div style="padding-top: 20px; padding-bottom: 30px; align-items: center; text-align: center;">
+    <h4 style="text-align: center; color: darkgray;">TAKE A LOOK AT OUR</h4>
+    <h1 class="leadingtext">CASE STUDIES</h1>
+    <div>
+      <img class="casesdtImg" src="./img/case std1.png" alt="" width="30%">
+      <img class="casesdtImg" src="./img/case std2.png" alt="" width="30%">
+      <img class="casesdtImg" src="./img/casestd3.png" alt="" width="30%">
+    </div>
+  </div>
+  <div style="background-color: #03265d; text-align: center; padding: 70px 0px;">
+    <h4 style="color: #6ca93c; margin-bottom: 30px;">Want to Discus Your idea ? </h4>
+    <button style="background-color: #03265d ;border: 1px solid white; color: white; padding: 12px 25px;">GEt In Touch</button>
+  </div>
+  <div style="display: flex; padding-top: 40px;">
+    <div style="width: 50%; padding-left: 20px; ">
+      <h3>Our Collaborative Culture
+      </h3>
+      <p>As a team, we think that a mentality that values evolution – and the ability of <br> human potential to affect
+        it – is the best environment for development. We try to alter the digital world by bringing together a fitting
+        combination of ideas and passion, offering a space for innovation.</p>
+    </div>
+    <div>
+      <h3>Envisioning Greatness Through</h3>
+      <div style="display: flex;">
+        <h5
+          style="background-color: #215dbe ; width: 150px; height: 80px; text-align: center; padding-top: 30px; margin-right: 15px;">
+          Diversity</h5>
+        <h5
+          style="margin-right: 15px; background-color:#91eb4c ; width: 150px; height: 80px; text-align: center; padding-top: 30px;">
+          Transparancy</h5>
+        <h5 style="background-color: #215dbe ; width: 150px; height: 80px; text-align: center; padding-top: 30px;">
+          Creativity</h5>
+
+      </div>
+    </div>
+  </div>
+  <div style="background-color: #03265d;">
+    <h4 style="text-align: center;">Our Team</h4>
+    <center>
+      <div style="width: 25%;border: 2px solid #11305f; margin-left: 30px;height: 500PX; ">
+        <img src="./img/dk.jpg" alt="" width="100%" height="300px">
+        <h3 style="text-align: center; color: #f3f5f8;padding-top: 10px; ">Mystic Ka Daku</h3>
+        <p style="text-align: center; color: #f3f5f8; padding-left: 10px; padding-right: 10px; padding-top: 10px;">
+          (mufta pro max) <br>kisi ka ka lunch muj sy bach k dhakia <br>
+          لڑکیوں کو کہتا ہوں "کافی پلا دو" <br> لڑکوں کو کہتا ہوں "آپ کھلا دو"۔
+        </p>
+
+      </div>
+    </center>
+    <div style="display: flex; margin-top: 30px;">
+      <!-- <div style="width: 25%;border: 2px solid #11305f; margin-left: 30px;height: 500PX;">
       <img  src="./img/dk.jpg" alt="" width="100%" height="300px">
       <h3 style="text-align: center; color: #215dbe;padding-top: 10px; " >Mystic Ka Daku</h3>
       <p style="text-align: center; color: #215dbe; padding-left: 10px; padding-right: 10px; padding-top: 10px;"   > (mufta pro max) <br>kisi ka ka lunch muj sy bach k dhakia <br>
@@ -209,35 +292,39 @@ idea of exploring and discovering the world through the eyes of marketing and ad
       
     </div> -->
 
-    <div style="width: 25%;border: 2px solid #11305f; margin-left: 130px;height: 400PX;">
-      <img  src="./img/Ammad-300x300.jpg" alt="" width="100%" height="300px">
-      <h3 style="text-align: center; color:#f3f5f8;padding-top: 10px; " > Mystic ka khazanchi </h3>
-      <p style="text-align: center; color:#f3f5f8; padding-left: 10px; padding-right: 10px; padding-top: 10px;"   > ya banda sub ki salary data ha </p>
-      
-    </div>
-    <div style="width: 25%;border: 2px solid #11305f; margin-left: 30px;height: 400PX;">
-      <img  src="./img/Umer2-300x300.jpg" alt="" width="100%" height="300px">
-      <h3 style="text-align: center; color: #f3f5f8;padding-top: 10px; " >Ustad</h3>
-      <p style="text-align: center; color: #f3f5f8; padding-left: 10px; padding-right: 10px; padding-top: 10px;"   > ANNNNAAAAA </p>
-      
-    </div>
+      <div style="width: 25%;border: 2px solid #11305f; margin-left: 130px;height: 400PX;">
+        <img src="./img/Ammad-300x300.jpg" alt="" width="100%" height="300px">
+        <h3 style="text-align: center; color:#f3f5f8;padding-top: 10px; "> Mystic ka khazanchi </h3>
+        <p style="text-align: center; color:#f3f5f8; padding-left: 10px; padding-right: 10px; padding-top: 10px;"> ya
+          banda sub ki salary data ha </p>
 
-    <div style="width: 25%;border: 2px solid #11305f; margin-left: 30px;height: 400PX;">
-      <img  src="./img/Sufyan-Chohan-1-300x300.jpg" alt="" width="100%" height="300px">
-      <h3 style="text-align: center; color: #f3f5f8;padding-top: 10px; " >chutu</h3>
-      <p style="text-align: center; color: #f3f5f8; padding-left: 10px; padding-right: 10px; padding-top: 10px;"   > ya f5 press karta ha  </p>
-      
+      </div>
+      <div style="width: 25%;border: 2px solid #11305f; margin-left: 30px;height: 400PX;">
+        <img src="./img/Umer2-300x300.jpg" alt="" width="100%" height="300px">
+        <h3 style="text-align: center; color: #f3f5f8;padding-top: 10px; ">Ustad</h3>
+        <p style="text-align: center; color: #f3f5f8; padding-left: 10px; padding-right: 10px; padding-top: 10px;">
+          ANNNNAAAAA </p>
+
+      </div>
+
+      <div style="width: 25%;border: 2px solid #11305f; margin-left: 30px;height: 400PX;">
+        <img src="./img/Sufyan-Chohan-1-300x300.jpg" alt="" width="100%" height="300px">
+        <h3 style="text-align: center; color: #f3f5f8;padding-top: 10px; ">chutu</h3>
+        <p style="text-align: center; color: #f3f5f8; padding-left: 10px; padding-right: 10px; padding-top: 10px;"> ya
+          f5 press karta ha </p>
+
+      </div>
+
+
     </div>
-
-
   </div>
-</div>
 
 
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>
