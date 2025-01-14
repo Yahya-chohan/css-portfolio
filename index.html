@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-  <style>
+  <link rel="icon" type="image/x-icon" href="https://cdn.pixabay.com/photo/2016/12/27/13/10/logo-1933884_1280.png">
+ <style>
     *{box-sizing: border-box;
       padding: 0;
       margin: 0;
@@ -130,6 +131,23 @@ padding-top: 30px;
 
 
  }
+ .footerdiv{
+   background-color: #03265d ;
+  display: flex;
+color: #91eb4c;
+/* flex-direction: column; */
+justify-content: space-around;
+padding: 80px 0;
+
+
+ }
+ .casesdtImg:hover{
+  transform: scale(1.1);
+ }
+ .servicecard:hover{
+background-color: #508df0;
+color: #69e609;
+ }
   </style>
 
 
@@ -227,7 +245,7 @@ padding-top: 30px;
       <h2 style="font-size: 60px;  font-weight: 650;">SOLUTIONS</h2>
     </div>
     <div style="display: flex; margin-top: 50px; padding-top: 50px; ">
-      <div style="width: 30%;border: 2px solid #11305f; margin-left: 30px; padding-top: 20px;">
+      <div class="servicecard" style="width: 30%;border: 2px solid #11305f; margin-left: 30px; padding-top: 20px;">
         <img class="cardimg" src="./img/loptopicon.png" alt="" width="100px">
         <h3 style="text-align: center; color: antiquewhite; ">Digital Marketing Services</h3>
         <p style="text-align: center; color: antiquewhite; padding-left: 10px; padding-right: 10px; padding-top: 10px;">
@@ -236,7 +254,7 @@ padding-top: 30px;
         <button class="btnIcon"> Read more</button>
       </div>
 
-      <div style="width: 30%;border: 2px solid #11305f; margin-left: 30px; padding-top: 20px;">
+      <div class="servicecard" style="width: 30%;border: 2px solid #11305f; margin-left: 30px; padding-top: 20px;">
         <img class="cardimg" src="./img/loptopicon.png" alt="" width="100px">
         <h3 style="text-align: center; color: antiquewhite; ">Digital Marketing Services</h3>
         <p style="text-align: center; color: antiquewhite; padding-left: 10px; padding-right: 10px; padding-top: 10px;">
@@ -244,7 +262,7 @@ padding-top: 30px;
           content that surpasses expectations across all digital platforms.</p>
         <button class="btnIcon"> Read more</button>
       </div>
-      <div style="width: 30%;border: 2px solid #11305f; margin-left: 30px; padding-top: 20px;">
+      <div class="servicecard" style="width: 30%;border: 2px solid #11305f; margin-left: 30px; padding-top: 20px;">
         <img class="cardimg" src="./img/loptopicon.png" alt="" width="100px">
         <h3 style="text-align: center; color: antiquewhite; ">Digital Marketing Services</h3>
         <p style="text-align: center; color: antiquewhite; padding-left: 10px; padding-right: 10px; padding-top: 10px;">
@@ -257,7 +275,7 @@ padding-top: 30px;
 
     <!-- 2nd <div -->
     <div style="display: flex; margin-top: 30px; ">
-      <div style="width: 30%;border: 2px solid #11305f; margin-left: 30px; padding-top: 20px;">
+      <div class="servicecard" style="width: 30%;border: 2px solid #11305f; margin-left: 30px; padding-top: 20px;">
         <img class="cardimg" src="./img/loptopicon.png" alt="" width="100px">
         <h3 style="text-align: center; color: antiquewhite; ">Digital Marketing Services</h3>
         <p style="text-align: center; color: antiquewhite; padding-left: 10px; padding-right: 10px; padding-top: 10px;">
@@ -266,7 +284,7 @@ padding-top: 30px;
         <button class="btnIcon"> Read more</button>
       </div>
 
-      <div style="width: 30%;border: 2px solid #11305f; margin-left: 30px; padding-top: 20px;">
+      <div class="servicecard" style="width: 30%;border: 2px solid #11305f; margin-left: 30px; padding-top: 20px;">
         <img class="cardimg" src="./img/loptopicon.png" alt="" width="100px">
         <h3 style="text-align: center; color: antiquewhite; ">Digital Marketing Services</h3>
         <p style="text-align: center; color: antiquewhite; padding-left: 10px; padding-right: 10px; padding-top: 10px;">
@@ -274,7 +292,7 @@ padding-top: 30px;
           content that surpasses expectations across all digital platforms.</p>
         <button class="btnIcon"> Read more</button>
       </div>
-      <div style="width: 30%;border: 2px solid #11305f; margin-left: 30px; padding-top: 20px;">
+      <div class="servicecard" style="width: 30%;border: 2px solid #11305f; margin-left: 30px; padding-top: 20px;">
         <img class="cardimg" src="./img/loptopicon.png" alt="" width="100px">
         <h3 style="text-align: center; color: antiquewhite; ">Digital Marketing Services</h3>
         <p style="text-align: center; color: antiquewhite; padding-left: 10px; padding-right: 10px; padding-top: 10px;">
@@ -330,10 +348,10 @@ padding-top: 30px;
       <div style="width: 25%;border: 2px solid #11305f; margin-left: 30px;height: 500PX; margin-top: 30px;  ">
         <img src="./img/dk.jpg" alt="" width="100%" height="300px">
         <h3 style="text-align: center; color: #f3f5f8;padding-top: 10px; ">Mystic Ka Daku</h3>
-        <p style="text-align: center; color: #f3f5f8; padding-left: 10px; padding-right: 10px; padding-top: 10px;">
+        <!-- <p style="text-align: center; color: #f3f5f8; padding-left: 10px; padding-right: 10px; padding-top: 10px;">
           (mufta pro max) <br>kisi ka ka lunch muj sy bach k dhakia <br>
           لڑکیوں کو کہتا ہوں "کافی پلا دو" <br> لڑکوں کو کہتا ہوں "آپ کھلا دو"۔
-        </p>
+        </p> -->
       </div>
     
     <div style="display: flex; margin-top: 30px;">
@@ -391,7 +409,18 @@ padding-top: 30px;
 </form>
 
 
+
   </div>
+
+
+  <!-- footer  -->
+<div class="footerdiv">
+  <h6>yahyachohan123@gmailcom</h6>
+  <h6>0312-9917944</h6>
+  <h6>Churchill, Executive Towers - 3409, 34th Floor - <br>Al A'amal St - Business Bay - Dubai <br>- United Arab Emirates</h6>
+</div>
+
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
